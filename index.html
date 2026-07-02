@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>АНО ДПО «Образовательный стандарт» — дистанционное обучение</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>РЕГ. № Л035-01298-77/00624415 &nbsp;·&nbsp; <a href="#license">проверить лицензию</a></div>
+    <div class="contacts">
+      <span>ПН–ПТ 9:00–18:00</span>
+      <a href="tel:+74952121234">+7 (495) 212-12-34</a>
+      <a href="mailto:zapros@dpostandart.ru">zapros@dpostandart.ru</a>
+    </div>
+  </div>
+</div>
+
+<header class="main" id="siteHeader">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" width="42" height="42" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
+        <circle cx="21" cy="21" r="15.5" stroke="#a9803f" stroke-width="1"/>
+        <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#0f2038" font-weight="600">ОС</text>
+      </svg>
+      <div class="logo-text">
+        <div class="name">Образовательный стандарт</div>
+        <div class="sub">АНО ДПО</div>
+      </div>
+    </a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html#about">О нас</a></li>
+        <li><a href="courses.html">Курсы</a></li>
+        <li><a href="index.html#why">Почему мы</a></li>
+        <li><a href="index.html#license">Лицензия</a></li>
+        <li><a href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="tel:+74952121234" class="btn btn-ghost btn-sm">Позвонить</a>
+      <button class="btn btn-gold btn-sm" onclick="openModal()">Оставить заявку</button>
+      <button class="burger" id="burger" aria-label="Открыть меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mn-close" id="mnClose" aria-label="Закрыть меню">✕</button>
+  <a href="index.html#about">О нас</a>
+  <a href="courses.html">Курсы</a>
+  <a href="index.html#why">Почему мы</a>
+  <a href="index.html#license">Лицензия</a>
+  <a href="index.html#contacts">Контакты</a>
+  <button class="btn btn-gold mn-cta" onclick="openModal()" style="width:100%;">Оставить заявку</button>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-grid-lines"></div>
+  <div class="container">
+    <div class="reveal in">
+      <span class="eyebrow" style="color:var(--gold-light);">АНО ДПО «Образовательный стандарт»</span>
+      <h1>Профессиональное обучение<br><em>государственного образца</em>, дистанционно</h1>
+      <p class="lead">Более 1500 программ переподготовки и повышения квалификации по 20+ направлениям. Обучаем без отрыва от работы и выдаём документы, действующие на всей территории РФ.</p>
+      <div class="btn-row">
+        <button class="btn btn-gold" onclick="openModal()">Подать заявку на обучение</button>
+        <a href="courses.html" class="btn btn-outline">Смотреть направления</a>
+      </div>
+      <div class="hero-meta">
+        <div><div class="n" data-count="153650">0</div><div class="l">СЛУШАТЕЛЕЙ</div></div>
+        <div><div class="n" data-count="2730">0</div><div class="l">ПРОГРАММ</div></div>
+        <div><div class="n" data-count="290">0</div><div class="l">ПАРТНЁРОВ</div></div>
+      </div>
+    </div>
+    <div class="seal-wrap reveal d2 in">
+      <svg width="300" height="300" viewBox="0 0 300 300" fill="none">
+        <g class="seal-rotate" style="transform-origin:150px 150px;">
+          <circle cx="150" cy="150" r="128" stroke="#cfae76" stroke-width="1" stroke-dasharray="2 6"/>
+          <circle cx="150" cy="150" r="112" stroke="#cfae76" stroke-width="1"/>
+          <path id="circlePath" d="M 150,38 A 112,112 0 1 1 149.9,38" fill="none"/>
+          <text font-family="IBM Plex Mono, monospace" font-size="11.5" letter-spacing="3" fill="#cfae76">
+            <textPath href="#circlePath" startOffset="2%">ОБРАЗОВАТЕЛЬНЫЙ СТАНДАРТ · ЛИЦЕНЗИЯ МИНОБРНАУКИ РФ ·</textPath>
+          </text>
+        </g>
+        <circle cx="150" cy="150" r="86" stroke="#4a5b7a" stroke-width="1"/>
+        <circle cx="150" cy="150" r="70" fill="rgba(255,255,255,0.03)" stroke="#cfae76" stroke-width="1"/>
+        <text x="150" y="140" text-anchor="middle" font-family="Fraunces, serif" font-size="30" fill="#fff" font-weight="500">ОС</text>
+        <text x="150" y="165" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#8ea0bb">EST. 2015</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stat reveal in"><div class="num">153 650+</div><div class="label">ПРОШЛИ ОБУЧЕНИЕ</div></div>
+    <div class="stat reveal d1 in"><div class="num">2 730+</div><div class="label">ПРОГРАММ ОБУЧЕНИЯ</div></div>
+    <div class="stat reveal d2 in"><div class="num">22 350+</div><div class="label">КОНТРАКТОВ С ОРГАНИЗАЦИЯМИ</div></div>
+    <div class="stat reveal d3 in"><div class="num">290+</div><div class="label">ПАРТНЁРОВ</div></div>
+  </div>
+</section>
+
+<section id="about" class="bg-white">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Что мы делаем</span>
+      <h2>Обучение, которое не отрывает от работы</h2>
+      <p style="margin-bottom:26px;">Мы понимаем, что очные занятия не всегда удобны для работающих людей, поэтому предлагаем заочную форму с применением дистанционных технологий. При необходимости проводим очное обучение для групп специалистов.</p>
+      <ul class="clause-list">
+        <li><span class="roman">01</span><span class="body"><b>Легитимные документы</b> — действуют на всей территории РФ</span></li>
+        <li><span class="roman">02</span><span class="body"><b>Кадровый рост</b> — повышение квалификации ваших сотрудников</span></li>
+        <li><span class="roman">03</span><span class="body"><b>Глубокие знания</b> — углублённая программа по профессии</span></li>
+        <li><span class="roman">04</span><span class="body"><b>Соответствие нормам</b> — помощь по требованиям РФ к допуску на работу</span></li>
+      </ul>
+    </div>
+    <div class="doc-panel reveal d2">
+      <span class="eyebrow" style="color:var(--gold-light);">Направления обучения</span>
+      <h3>Программы</h3>
+      <ul>
+        <li><span class="dot"></span>Профессиональная переподготовка</li>
+        <li><span class="dot"></span>Повышение квалификации</li>
+        <li><span class="dot"></span>Охрана труда и ПТМ</li>
+        <li><span class="dot"></span>Рабочие специальности</li>
+        <li><span class="dot"></span>Аккредитация медработников (НМО)</li>
+      </ul>
+      <a href="courses.html" class="btn btn-gold" style="margin-top:24px; width:100%;">Все программы обучения</a>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Почему выбирают нас</span>
+      <h2>Девять причин учиться у нас</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card"><span class="why-num">01</span><h3>Реестр Минобрнауки</h3><p>Вносим сведения об обучении в Федеральный реестр дополнительного образования.</p></div>
+      <div class="why-card"><span class="why-num">02</span><h3>Свой методотдел</h3><p>Собственный учебно-методический отдел разрабатывает и обновляет программы.</p></div>
+      <div class="why-card"><span class="why-num">03</span><h3>Короткие сроки</h3><p>Минимальные сроки обучения благодаря дистанционным технологиям.</p></div>
+      <div class="why-card"><span class="why-num">04</span><h3>120+ преподавателей</h3><p>Более 120 преподавателей и методистов разрабатывают наши программы.</p></div>
+      <div class="why-card"><span class="why-num">05</span><h3>Без отрыва от работы</h3><p>Обучение проходит без отрыва от рабочего места или производства.</p></div>
+      <div class="why-card"><span class="why-num">06</span><h3>1500+ программ</h3><p>Широкий выбор программ повышения квалификации и переподготовки.</p></div>
+      <div class="why-card"><span class="why-num">07</span><h3>Личный куратор</h3><p>Выделяем каждому слушателю профессионального куратора.</p></div>
+      <div class="why-card"><span class="why-num">08</span><h3>Гибкий график</h3><p>Индивидуальный график обучения под ваш рабочий ритм.</p></div>
+      <div class="why-card"><span class="why-num">09</span><h3>Свои классы</h3><p>Собственные учебные классы для очных занятий по запросу.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="license" class="bg-white">
+  <div class="container">
+    <div class="license reveal">
+      <div class="seal-box">
+        <svg width="170" height="170" viewBox="0 0 170 170" fill="none">
+          <circle cx="85" cy="85" r="80" stroke="#cfae76" stroke-width="1" stroke-dasharray="1 5"/>
+          <circle cx="85" cy="85" r="66" stroke="#cfae76" stroke-width="1"/>
+          <text x="85" y="78" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#fff" font-weight="600">ЛИЦЕНЗИЯ</text>
+          <text x="85" y="98" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#cfae76">Л035-01298-77</text>
+        </svg>
+      </div>
+      <div class="content">
+        <span class="eyebrow" style="color:var(--gold-light);">Официальный документ</span>
+        <h3 style="color:#fff; margin-bottom:14px; font-size:22px;">Лицензия на образовательную деятельность</h3>
+        <p>АНО ДПО «Образовательный стандарт» получила лицензию на образовательную деятельность 24 февраля 2016 года. Лицензия даёт право на реализацию программ дополнительного профессионального образования.</p>
+        <div class="meta-row">
+          <div><b>ОГРН</b>1157746882182</div>
+          <div><b>ИНН</b>7725289953</div>
+          <div><b>Дата выдачи</b>24.02.2016</div>
+        </div>
+        <a href="https://islod.obrnadzor.gov.ru/rlic/details/6f1afa6c-57e4-0ff2-07a7-035ccf751e26/" target="_blank" class="btn btn-gold">Проверить лицензию</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" style="padding:0;">
+  <div class="container reveal">
+    <div>
+      <h3>Обучение со скидкой до 50%</h3>
+      <p>Оставьте заявку — рассчитаем стоимость индивидуально</p>
+    </div>
+    <button class="btn btn-gold" onclick="openModal()">Рассчитать скидку</button>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Свяжитесь с нами</span>
+      <h2>Контакты</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <ul class="contact-list">
+          <li><div class="ic">01</div><div><div class="t">Телефон</div><div class="v">+7 (495) 212-12-34</div></div></li>
+          <li><div class="ic">02</div><div><div class="t">Email</div><div class="v">zapros@dpostandart.ru</div></div></li>
+          <li><div class="ic">03</div><div><div class="t">Адрес</div><div class="v">115230, Москва, Варшавское шоссе, 42</div></div></li>
+          <li><div class="ic">04</div><div><div class="t">Режим работы</div><div class="v">Понедельник – Пятница, 9:00–18:00</div></div></li>
+        </ul>
+        <div class="form-card">
+          <h3>Получить консультацию</h3>
+          <p>Специалист свяжется с вами в течение рабочего дня</p>
+          <form onsubmit="event.preventDefault(); alert('Заявка отправлена. Мы свяжемся с вами в ближайшее время!'); this.reset();">
+            <div class="field"><label>Имя</label><input type="text" required></div>
+            <div class="field"><label>Телефон</label><input type="tel" required></div>
+            <div class="field"><label>Направление</label>
+              <select>
+                <option>Профессиональная переподготовка</option>
+                <option>Повышение квалификации</option>
+                <option>НМО</option>
+                <option>Охрана труда и ПТМ</option>
+                <option>Рабочие специальности</option>
+                <option>Иное</option>
+              </select>
+            </div>
+            <div class="consent">Отправляя форму, вы даёте согласие на <a href="#">обработку персональных данных</a>.</div>
+            <button type="submit" class="btn btn-gold" style="width:100%;">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+      <div class="map-box reveal d2">
+        <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=84021725956" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg width="38" height="38" viewBox="0 0 42 42" fill="none">
+            <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
+            <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#fff" font-weight="600">ОС</text>
+          </svg>
+          <div class="logo-text"><div class="name" style="color:#fff;">Образовательный стандарт</div></div>
+        </div>
+        <p>Автономная Некоммерческая Организация Дополнительного Профессионального образования.</p>
+        <div class="socials">
+          <a href="#" title="ВКонтакте">VK</a>
+          <a href="#" title="Одноклассники">OK</a>
+          <a href="#" title="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="courses.html">Курсы</a></li>
+          <li><a href="index.html#license">Лицензия</a></li>
+          <li><a href="index.html#why">Почему мы</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="courses.html">Проф. переподготовка</a></li>
+          <li><a href="courses.html">Повышение квалификации</a></li>
+          <li><a href="courses.html">Охрана труда</a></li>
+          <li><a href="courses.html">Рабочие специальности</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (495) 212-12-34</li>
+          <li>zapros@dpostandart.ru</li>
+          <li>Москва, Варшавское шоссе, 42</li>
+        </ul>
+        <div class="footer-legal">Р/с 440702810302360001688<br>АО «АЛЬФА-БАНК», БИК 044525593<br>ИНН 7725289953, ОГРН 1157746882182</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 АНО ДПО «Образовательный стандарт»</div>
+      <div><a href="#">Политика конфиденциальности</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h3>Подать заявку на обучение</h3>
+    <p class="desc">Оставьте свои данные, наши специалисты свяжутся с вами.</p>
+    <form onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.'); closeModal(); this.reset();">
+      <div class="field"><label>Имя</label><input type="text" required></div>
+      <div class="field"><label>Телефон</label><input type="tel" required></div>
+      <div class="field"><label>Направление</label>
+        <select>
+          <option>Профессиональная переподготовка</option>
+          <option>Повышение квалификации</option>
+          <option>НМО</option>
+          <option>Охрана труда и ПТМ</option>
+          <option>Рабочие специальности</option>
+          <option>Иное</option>
+        </select>
+      </div>
+      <div class="consent">Даю согласие на <a href="#">обработку персональных данных</a> и e-mail рассылку.</div>
+      <button type="submit" class="btn btn-gold" style="width:100%;">Получить консультацию</button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

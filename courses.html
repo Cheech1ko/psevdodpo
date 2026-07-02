@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Курсы и программы обучения — АНО ДПО «Образовательный стандарт»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div>РЕГ. № Л035-01298-77/00624415 &nbsp;·&nbsp; <a href="index.html#license">проверить лицензию</a></div>
+    <div class="contacts">
+      <span>ПН–ПТ 9:00–18:00</span>
+      <a href="tel:+74952121234">+7 (495) 212-12-34</a>
+      <a href="mailto:zapros@dpostandart.ru">zapros@dpostandart.ru</a>
+    </div>
+  </div>
+</div>
+
+<header class="main" id="siteHeader">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" width="42" height="42" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
+        <circle cx="21" cy="21" r="15.5" stroke="#a9803f" stroke-width="1"/>
+        <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#0f2038" font-weight="600">ОС</text>
+      </svg>
+      <div class="logo-text">
+        <div class="name">Образовательный стандарт</div>
+        <div class="sub">АНО ДПО</div>
+      </div>
+    </a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html#about">О нас</a></li>
+        <li><a href="courses.html" class="active">Курсы</a></li>
+        <li><a href="index.html#why">Почему мы</a></li>
+        <li><a href="index.html#license">Лицензия</a></li>
+        <li><a href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="cta">
+      <a href="tel:+74952121234" class="btn btn-ghost btn-sm">Позвонить</a>
+      <button class="btn btn-gold btn-sm" onclick="openModal()">Оставить заявку</button>
+      <button class="burger" id="burger" aria-label="Открыть меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mn-close" id="mnClose" aria-label="Закрыть меню">✕</button>
+  <a href="index.html#about">О нас</a>
+  <a href="courses.html">Курсы</a>
+  <a href="index.html#why">Почему мы</a>
+  <a href="index.html#license">Лицензия</a>
+  <a href="index.html#contacts">Контакты</a>
+  <button class="btn btn-gold mn-cta" onclick="openModal()" style="width:100%;">Оставить заявку</button>
+</nav>
+
+<section class="page-hero">
+  <div class="hero-grid-lines"></div>
+  <div class="container reveal in">
+    <div class="breadcrumb"><a href="index.html">Главная</a> / Курсы</div>
+    <span class="eyebrow" style="color:var(--gold-light);">Каталог программ</span>
+    <h1>Курсы и программы обучения</h1>
+    <p>1500+ программ дополнительного профессионального образования: переподготовка, повышение квалификации, охрана труда и рабочие специальности. Обучение дистанционно, документы государственного образца.</p>
+  </div>
+</section>
+
+<section style="padding-top:64px;">
+  <div class="container">
+
+    <div class="courses-intro-stats reveal">
+      <div class="s"><div class="num">1 500+</div><div class="lbl">ПРОГРАММ</div></div>
+      <div class="s"><div class="num">от 16 ч.</div><div class="lbl">СРОК ОБУЧЕНИЯ</div></div>
+      <div class="s"><div class="num">100%</div><div class="lbl">ДИСТАНЦИОННО</div></div>
+      <div class="s"><div class="num">до 50%</div><div class="lbl">СКИДКА</div></div>
+    </div>
+
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-cat="all">Все программы</button>
+      <button class="filter-tab" data-cat="retrain">Переподготовка</button>
+      <button class="filter-tab" data-cat="qualify">Повышение квалификации</button>
+      <button class="filter-tab" data-cat="safety">Охрана труда</button>
+      <button class="filter-tab" data-cat="worker">Рабочие специальности</button>
+      <button class="filter-tab" data-cat="nmo">НМО</button>
+    </div>
+
+    <!-- Переподготовка -->
+    <div class="course-group reveal" data-cat="retrain">
+      <div class="course-group-title"><h3>Профессиональная переподготовка</h3><span class="count">8 программ</span></div>
+      <div class="course-list">
+        <div class="course-row">
+          <div class="cnum">01</div>
+          <div><div class="ctitle">Педагогическое образование: учитель начальных классов</div><div class="cdesc">Диплом о профессиональной переподготовке</div></div>
+          <div class="cmeta"><b>от 260 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–6 недель</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">02</div>
+          <div><div class="ctitle">Менеджмент в здравоохранении</div><div class="cdesc">Диплом о профессиональной переподготовке</div></div>
+          <div class="cmeta"><b>от 260 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–6 недель</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">03</div>
+          <div><div class="ctitle">Бухгалтерский учёт, анализ и аудит</div><div class="cdesc">Диплом о профессиональной переподготовке</div></div>
+          <div class="cmeta"><b>от 250 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–5 недель</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">04</div>
+          <div><div class="ctitle">Дошкольное образование: воспитатель</div><div class="cdesc">Диплом о профессиональной переподготовке</div></div>
+          <div class="cmeta"><b>от 260 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–6 недель</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Повышение квалификации -->
+    <div class="course-group reveal" data-cat="qualify">
+      <div class="course-group-title"><h3>Повышение квалификации</h3><span class="count">6 программ</span></div>
+      <div class="course-list">
+        <div class="course-row">
+          <div class="cnum">01</div>
+          <div><div class="ctitle">Организация закупок по 44-ФЗ и 223-ФЗ</div><div class="cdesc">Удостоверение о повышении квалификации</div></div>
+          <div class="cmeta"><b>от 40 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>1–2 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">02</div>
+          <div><div class="ctitle">Делопроизводство и документооборот</div><div class="cdesc">Удостоверение о повышении квалификации</div></div>
+          <div class="cmeta"><b>от 40 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>1–2 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">03</div>
+          <div><div class="ctitle">Управление государственными и муниципальными закупками</div><div class="cdesc">Удостоверение о повышении квалификации</div></div>
+          <div class="cmeta"><b>от 72 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>2–3 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Охрана труда -->
+    <div class="course-group reveal" data-cat="safety">
+      <div class="course-group-title"><h3>Охрана труда и ПТМ</h3><span class="count">5 программ</span></div>
+      <div class="course-list">
+        <div class="course-row">
+          <div class="cnum">01</div>
+          <div><div class="ctitle">Охрана труда для руководителей и специалистов</div><div class="cdesc">Удостоверение установленного образца</div></div>
+          <div class="cmeta"><b>от 40 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>5–10 дней</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">02</div>
+          <div><div class="ctitle">Пожарно-технический минимум (ПТМ)</div><div class="cdesc">Удостоверение установленного образца</div></div>
+          <div class="cmeta"><b>от 16 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>2–4 дня</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">03</div>
+          <div><div class="ctitle">Электробезопасность, группа II–IV</div><div class="cdesc">Удостоверение установленного образца</div></div>
+          <div class="cmeta"><b>от 24 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–5 дней</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Рабочие специальности -->
+    <div class="course-group reveal" data-cat="worker">
+      <div class="course-group-title"><h3>Рабочие специальности</h3><span class="count">4 программы</span></div>
+      <div class="course-list">
+        <div class="course-row">
+          <div class="cnum">01</div>
+          <div><div class="ctitle">Стропальщик</div><div class="cdesc">Свидетельство о профессии рабочего</div></div>
+          <div class="cmeta"><b>от 72 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>2–3 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">02</div>
+          <div><div class="ctitle">Оператор котельной</div><div class="cdesc">Свидетельство о профессии рабочего</div></div>
+          <div class="cmeta"><b>от 120 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–4 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- НМО -->
+    <div class="course-group reveal" data-cat="nmo">
+      <div class="course-group-title"><h3>Аккредитация медработников (НМО)</h3><span class="count">3 программы</span></div>
+      <div class="course-list">
+        <div class="course-row">
+          <div class="cnum">01</div>
+          <div><div class="ctitle">Сестринское дело: непрерывное медицинское образование</div><div class="cdesc">Баллы НМО, сертификат</div></div>
+          <div class="cmeta"><b>от 36 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>1–2 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+        <div class="course-row">
+          <div class="cnum">02</div>
+          <div><div class="ctitle">Организация здравоохранения и общественное здоровье</div><div class="cdesc">Баллы НМО, сертификат</div></div>
+          <div class="cmeta"><b>от 144 ч.</b>Объём программы</div>
+          <div class="cmeta"><b>3–4 недели</b>Срок обучения</div>
+          <button class="cbtn" onclick="openModal()">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band" style="padding:0;">
+  <div class="container reveal">
+    <div>
+      <h3>Не нашли нужную программу?</h3>
+      <p>Оставьте заявку — подберём курс индивидуально под вашу задачу</p>
+    </div>
+    <button class="btn btn-gold" onclick="openModal()">Подобрать программу</button>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg width="38" height="38" viewBox="0 0 42 42" fill="none">
+            <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
+            <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#fff" font-weight="600">ОС</text>
+          </svg>
+          <div class="logo-text"><div class="name" style="color:#fff;">Образовательный стандарт</div></div>
+        </div>
+        <p>Автономная Некоммерческая Организация Дополнительного Профессионального образования.</p>
+        <div class="socials">
+          <a href="#" title="ВКонтакте">VK</a>
+          <a href="#" title="Одноклассники">OK</a>
+          <a href="#" title="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="courses.html">Курсы</a></li>
+          <li><a href="index.html#license">Лицензия</a></li>
+          <li><a href="index.html#why">Почему мы</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="courses.html">Проф. переподготовка</a></li>
+          <li><a href="courses.html">Повышение квалификации</a></li>
+          <li><a href="courses.html">Охрана труда</a></li>
+          <li><a href="courses.html">Рабочие специальности</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (495) 212-12-34</li>
+          <li>zapros@dpostandart.ru</li>
+          <li>Москва, Варшавское шоссе, 42</li>
+        </ul>
+        <div class="footer-legal">Р/с 440702810302360001688<br>АО «АЛЬФА-БАНК», БИК 044525593<br>ИНН 7725289953, ОГРН 1157746882182</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 АНО ДПО «Образовательный стандарт»</div>
+      <div><a href="#">Политика конфиденциальности</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h3>Записаться на обучение</h3>
+    <p class="desc">Оставьте свои данные, наши специалисты свяжутся с вами.</p>
+    <form onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.'); closeModal(); this.reset();">
+      <div class="field"><label>Имя</label><input type="text" required></div>
+      <div class="field"><label>Телефон</label><input type="tel" required></div>
+      <div class="field"><label>Направление</label>
+        <select>
+          <option>Профессиональная переподготовка</option>
+          <option>Повышение квалификации</option>
+          <option>НМО</option>
+          <option>Охрана труда и ПТМ</option>
+          <option>Рабочие специальности</option>
+          <option>Иное</option>
+        </select>
+      </div>
+      <div class="consent">Даю согласие на <a href="#">обработку персональных данных</a> и e-mail рассылку.</div>
+      <button type="submit" class="btn btn-gold" style="width:100%;">Отправить заявку</button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
