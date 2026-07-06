@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Московский институт образования и развития — дистанционное обучение</title>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,15 +28,7 @@
 <header class="main" id="siteHeader">
   <div class="container">
     <a href="index.html" class="logo">
-      <svg class="logo-mark" width="42" height="42" viewBox="0 0 42 42" fill="none">
-        <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
-        <circle cx="21" cy="21" r="15.5" stroke="#a9803f" stroke-width="1"/>
-        <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#0f2038" font-weight="600">МИОР</text>
-      </svg>
-      <div class="logo-text">
-        <div class="name">Московский институт</div>
-        <div class="sub">образования и развития</div>
-      </div>
+      <img class="logo-mark" src="img/logo-horizontal.png" alt="Московский институт образования и развития" width="300" height="70">
     </a>
     <nav class="primary">
       <ul>
@@ -92,8 +87,7 @@
         </g>
         <circle cx="150" cy="150" r="86" stroke="#4a5b7a" stroke-width="1"/>
         <circle cx="150" cy="150" r="70" fill="rgba(255,255,255,0.03)" stroke="#cfae76" stroke-width="1"/>
-        <text x="150" y="140" text-anchor="middle" font-family="Fraunces, serif" font-size="30" fill="#fff" font-weight="500">МИОР</text>
-        <text x="150" y="165" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#8ea0bb">EST. 2015</text>
+        <image href="img/logo-icon.png" x="97" y="97" width="106" height="106" preserveAspectRatio="xMidYMid meet"/>
       </svg>
     </div>
   </div>
@@ -209,9 +203,17 @@
         <div class="form-card">
           <h3>Получить консультацию</h3>
           <p>Специалист свяжется с вами в течение рабочего дня</p>
-          <form onsubmit="event.preventDefault(); alert('Заявка отправлена. Мы свяжемся с вами в ближайшее время!'); this.reset();">
-            <div class="field"><label>Имя</label><input type="text" required></div>
-            <div class="field"><label>Телефон</label><input type="tel" required></div>
+          <form class="js-form" data-success="Заявка отправлена. Мы свяжемся с вами в ближайшее время!">
+            <div class="field">
+              <label>Имя</label>
+              <input type="text" name="client_name" data-rule="name" required>
+              <div class="field-error"></div>
+            </div>
+            <div class="field">
+              <label>Телефон</label>
+              <input type="tel" name="client_phone" data-rule="phone" placeholder="+7 (999) 123-45-67" required>
+              <div class="field-error"></div>
+            </div>
             <div class="field"><label>Направление</label>
               <select>
                 <option>Профессиональная переподготовка</option>
@@ -239,10 +241,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo">
-          <svg width="38" height="38" viewBox="0 0 42 42" fill="none">
-            <circle cx="21" cy="21" r="20" stroke="#a9803f" stroke-width="1.2"/>
-            <text x="21" y="26" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="#fff" font-weight="600">МИОР</text>
-          </svg>
+          <img src="img/logo-icon.png" alt="Московский институт образования и развития" width="38" height="38">
           <div class="logo-text"><div class="name" style="color:#fff;">Московский институт</div></div>
         </div>
         <p>Московский институт образования и развития — дополнительное профессиональное образование.</p>
@@ -292,9 +291,17 @@
     <button class="close" onclick="closeModal()">✕</button>
     <h3>Подать заявку на обучение</h3>
     <p class="desc">Оставьте свои данные, наши специалисты свяжутся с вами.</p>
-    <form onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.'); closeModal(); this.reset();">
-      <div class="field"><label>Имя</label><input type="text" required></div>
-      <div class="field"><label>Телефон</label><input type="tel" required></div>
+    <form class="js-form" data-success="Спасибо! Заявка отправлена." data-modal="true">
+      <div class="field">
+        <label>Имя</label>
+        <input type="text" name="client_name" data-rule="name" required>
+        <div class="field-error"></div>
+      </div>
+      <div class="field">
+        <label>Телефон</label>
+        <input type="tel" name="client_phone" data-rule="phone" placeholder="+7 (999) 123-45-67" required>
+        <div class="field-error"></div>
+      </div>
       <div class="field"><label>Направление</label>
         <select>
           <option>Профессиональная переподготовка</option>
@@ -312,5 +319,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>
