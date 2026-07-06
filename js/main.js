@@ -10,16 +10,18 @@ const closeModal = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ── Модальное окно ──
     const overlay = document.getElementById('modalOverlay');
     if (overlay) {
         overlay.addEventListener('click', (e) => {
-            if (e.target === this) closeModal();
+            if (e.target === overlay) closeModal();  // ← исправлено: overlay вместо this
         });
     }
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeModal();
     });
 
+    // ── Шапка с тенью ──
     const header = document.getElementById('siteHeader');
     if (header) {
         window.addEventListener('scroll', () => {
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── Бургер-меню ──
     const burger = document.getElementById('burger');
     const mobileNav = document.getElementById('mobileNav');
     const scrim = document.getElementById('scrim');

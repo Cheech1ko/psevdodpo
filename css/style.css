@@ -102,7 +102,7 @@ header .cta{display:flex; gap:10px; align-items:center;}
 .burger.open span::after{transform:translateY(-6px) rotate(-45deg);}
 
 .mobile-nav{
-  display:none; position:fixed; top:0; right:0; bottom:0; width:min(320px,86%);
+  display:flex; position:fixed; top:0; right:0; bottom:0; width:min(320px,86%);
   background:var(--ink); z-index:120; padding:90px 32px 32px; transform:translateX(100%);
   transition:transform .35s ease; flex-direction:column; gap:4px;
 }
